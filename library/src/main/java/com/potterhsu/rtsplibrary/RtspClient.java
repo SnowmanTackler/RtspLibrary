@@ -24,7 +24,7 @@ public class RtspClient {
      * @param endpoint resource endpoint
      * @return 0 if exit normally or -1 otherwise
      */
-    public native int play(String endpoint);
+    public native int play(String endpoint, int minPort, int maxPort);
     public native void stop();
     public native void dispose();
 }
